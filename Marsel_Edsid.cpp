@@ -77,21 +77,35 @@ int main()
 	datoteka.open("Igra.txt");
 	cout << "Heroj 1" << endl;
 	cout << "*********************************" << endl;
-	cout << "Vnesi napad orozja: " << endl;	
-	cin >> a;
-	cout << "Vnesi hitrost orozja: " << endl;
-	cin >> b;
-	cout << "Vnesi kriticni napad orozja: " << endl;
-	cin >> c;
-	cout << "Vnesi zascito oklepa: " << endl;
-	cin >> d;
-	cout << "Vnesi zivljenje oklepa: " << endl;
-	cin >> e;
+	do {
+		cout << "Vnesi napad orozja: " << endl;
+		cin >> a;
+	} while (a < 1 || a > 500);
+	do {
+		cout << "Vnesi hitrost orozja: " << endl;
+		cin >> b;
+	} while (b < 1 || b > 100);
+	do {
+		cout << "Vnesi kriticni napad orozja(%): " << endl;
+		cin >> c;
+	} while (c < 1 || c > 100);
+	do {
+		cout << "Vnesi zascito oklepa: " << endl;
+		cin >> d;
+	} while (d < 1 || d > 100);
+	do {
+		cout << "Vnesi zivljenje oklepa: " << endl;
+		cin >> e;
+	} while (e < 1 || e > 4000);
 	cin.ignore();
-	cout << "Vnesi ime heroja: " << endl;
-	getline(cin, f);
-	cout << "Vnesi level heroja: " << endl;
-	cin >> g;
+	do{
+		cout << "Vnesi ime heroja: " << endl;
+		getline(cin,f);
+	} while (f.length() > 20);
+	do {
+		cout << "Vnesi level heroja: " << endl;
+		cin >> g;
+	} while (g < 1 || g > 18);
 	cout << "\n";
 	Heroj heroj1;
 	heroj1.vpis(a, b, c, d, e, f, g);
@@ -110,21 +124,35 @@ int main()
 	
 	cout << "Heroj 2" << endl;
 	cout << "*********************************" << endl;
-	cout << "Vnesi napad orozja: " << endl;	
-	cin >> a;
-	cout << "Vnesi hitrost orozja: " << endl;
-	cin >> b;
-	cout << "Vnesi kriticni napad orozja: " << endl;
-	cin >> c;
-	cout << "Vnesi zascito oklepa: " << endl;
-	cin >> d;
-	cout << "Vnesi zivljenje oklepa: " << endl;
-	cin >> e;
+	do {
+		cout << "Vnesi napad orozja: " << endl;
+		cin >> a;
+	} while (a < 1 || a > 500);
+	do {
+		cout << "Vnesi hitrost orozja: " << endl;
+		cin >> b;
+	} while (b < 1 || b > 100);
+	do {
+		cout << "Vnesi kriticni napad orozja(%): " << endl;
+		cin >> c;
+	} while (c < 1 || c > 100);
+	do {
+		cout << "Vnesi zascito oklepa: " << endl;
+		cin >> d;
+	} while (d < 1 || d > 100);
+	do {
+		cout << "Vnesi zivljenje oklepa: " << endl;
+		cin >> e;
+	} while (e < 1 || e > 4000);
 	cin.ignore();
-	cout << "Vnesi ime heroja: " << endl;
-	getline(cin, f);
-	cout << "Vnesi level heroja: " << endl;
-	cin >> g;
+	do{
+		cout << "Vnesi ime heroja: " << endl;
+		getline(cin,f);
+	} while (f.length() > 20);
+	do {
+		cout << "Vnesi level heroja: " << endl;
+		cin >> g;
+	} while (g < 1 || g > 18);
 	cout << "\n";
 	Heroj heroj2;
 	heroj2.vpis(a, b, c, d, e, f, g);
